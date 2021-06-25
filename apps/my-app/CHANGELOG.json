@@ -2,6 +2,20 @@
   "name": "my-app",
   "entries": [
     {
+      "version": "2.1.3",
+      "tag": "my-app_v2.1.3",
+      "date": "Fri, 25 Jun 2021 14:35:21 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Bump no push",
+            "author": "Edward <edward@synap.ac>",
+            "commit": "8aab699be7b9521ab19a1fc6b942c00b62a59735"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.2",
       "tag": "my-app_v2.1.2",
       "date": "Fri, 25 Jun 2021 14:26:35 GMT",
