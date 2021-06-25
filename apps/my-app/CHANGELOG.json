@@ -2,6 +2,20 @@
   "name": "my-app",
   "entries": [
     {
+      "version": "3.0.0",
+      "tag": "my-app_v3.0.0",
+      "date": "Fri, 25 Jun 2021 14:37:55 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Major bump",
+            "author": "Edward <edward@synap.ac>",
+            "commit": "2eb1a5b101183713da7d0ef3393ee0f567c9c1f7"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.3",
       "tag": "my-app_v2.1.3",
       "date": "Fri, 25 Jun 2021 14:31:22 GMT",
