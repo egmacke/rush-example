@@ -2,6 +2,25 @@
   "name": "my-controls",
   "entries": [
     {
+      "version": "1.0.3",
+      "tag": "my-controls_v1.0.3",
+      "date": "Thu, 02 Sep 2021 11:14:09 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "//",
+            "author": "Edward <edward@synap.ac>",
+            "commit": "b5b1d0a26a27435936b2b8dd439e07ef9a2fcab8"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"my-toolchain\" from `^1.0.1` to `^1.0.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.2",
       "tag": "my-controls_v1.0.2",
       "date": "Thu, 02 Sep 2021 11:05:35 GMT",
