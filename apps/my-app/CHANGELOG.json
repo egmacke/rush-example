@@ -2,6 +2,27 @@
   "name": "my-app",
   "entries": [
     {
+      "version": "3.2.4",
+      "tag": "my-app_v3.2.4",
+      "date": "Thu, 02 Sep 2021 11:02:09 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "No email",
+            "author": "Edward <edward@synap.ac>",
+            "commit": "05b98cdcd73e4980cb8a5f466381330351466318"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "More changes for patch",
+            "author": "Edward <edward@synap.ac>",
+            "commit": "05b98cdcd73e4980cb8a5f466381330351466318"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.2.3",
       "tag": "my-app_v3.2.3",
       "date": "Wed, 30 Jun 2021 08:18:40 GMT",
