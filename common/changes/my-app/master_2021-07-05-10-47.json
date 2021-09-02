@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "my-app",
+      "comment": "No email",
+      "type": "none"
+    }
+  ],
+  "packageName": "my-app",
+  "email": "null"
+}
