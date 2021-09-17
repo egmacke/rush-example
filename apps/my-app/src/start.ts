@@ -10,3 +10,4 @@ const somethingNew5 = "";
 
 //
 //
+let shouldBeConst = true;
