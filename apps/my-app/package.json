@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "version": "3.2.6",
+  "version": "3.2.7",
   "description": "An example application that consumes the my-controls library",
   "license": "MIT",
   "scripts": {
@@ -9,11 +9,11 @@
   },
   "dependencies": {
     "aws-sdk": "~2.932.0",
-    "my-controls": "workspace:^1.0.3",
+    "my-controls": "workspace:^1.0.4",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "my-toolchain": "workspace:^1.0.2",
+    "my-toolchain": "workspace:^1.0.3",
     "typescript": "^3.0.3"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "my-controls",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An example library project",
   "license": "MIT",
   "main": "lib/index.js",
@@ -10,7 +10,7 @@
     "my-bulk-command": "node_modules/.bin/my-bulk-command"
   },
   "devDependencies": {
-    "my-toolchain": "workspace:^1.0.2",
+    "my-toolchain": "workspace:^1.0.3",
     "typescript": "^3.0.3"
   }
 }
