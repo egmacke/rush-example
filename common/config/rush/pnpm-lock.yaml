@@ -8,8 +8,8 @@ importers:
   ../../apps/my-app:
     specifiers:
       aws-sdk: ~2.932.0
-      my-controls: workspace:^1.0.2
-      my-toolchain: workspace:^1.0.1
+      my-controls: workspace:^1.0.3
+      my-toolchain: workspace:^1.0.2
       typescript: ^3.0.3
       whatwg-fetch: ^3.0.0
     dependencies:
@@ -22,7 +22,7 @@ importers:
 
   ../../libraries/my-controls:
     specifiers:
-      my-toolchain: workspace:^1.0.1
+      my-toolchain: workspace:^1.0.2
       typescript: ^3.0.3
     devDependencies:
       my-toolchain: link:../../tools/my-toolchain
