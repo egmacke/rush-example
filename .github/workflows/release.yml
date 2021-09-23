@@ -2,9 +2,9 @@ name: Run Release
 
 on:
   workflow_dispatch:
-  schedule:
-    # At every hour, from Monday through Friday.
-    - cron: "0 * * * 1-5"
+  # schedule:
+  #   # At every hour, from Monday through Friday.
+  #   - cron: "0 * * * 1-5"
 
 jobs:
   tag_release:
@@ -40,5 +40,4 @@ jobs:
       - name: Release Packages
         run: |
           node common/scripts/install-run-rush.js publish --apply --add-commit-details --target-branch master
-          node common/scripts/install-run-rush.js build
           node common/scripts/install-run-rush.js publish --apply --target-branch master --pack --include-all --apply-git-tags-on-pack --publish
