@@ -1,0 +1,19 @@
+name: New Release - Library
+
+on:
+  push:
+    tags:
+      - my-controls_v*
+
+jobs:
+  on-release:
+    name: On Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get release version
+        if: ${{ env.RELEASE == null }}
+        id: version
+        run: |
+          echo "${GITHUB_REF#refs/*/my-controls_v}"
