@@ -4,6 +4,15 @@ on:
   push:
     tags:
       - my-app_v*
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version"
+        default: '0.0.0'
+        required: true
+    
+env:
+  RELEASE: ${{ github.event.inputs.version }}
 
 jobs:
   on-release:
