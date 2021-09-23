@@ -2,6 +2,20 @@
   "name": "my-toolchain",
   "entries": [
     {
+      "version": "1.0.3",
+      "tag": "my-toolchain_v1.0.3",
+      "date": "Thu, 23 Sep 2021 13:18:50 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Testing",
+            "author": "Edward <edward@synap.ac>",
+            "commit": "db31558a5e3414cd0f4aadfd50e2a33c47b70d91"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.2",
       "tag": "my-toolchain_v1.0.2",
       "date": "Thu, 02 Sep 2021 11:14:09 GMT",
