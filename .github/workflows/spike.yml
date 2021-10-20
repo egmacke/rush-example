@@ -6,7 +6,7 @@ on:
       version:
         default: '0.0.0'
         required: true
-        description: "SynapCore version"
+        description: "My App version"
       
 env:
   RELEASE: ${{ github.event.inputs.version }}
@@ -17,12 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: 'my-app_v${{env.RELEASE}}'
 
-      - name: Get release version
-        if: ${{ env.RELEASE != '0.0.0' }}
-        id: version
-        run: |
-          echo "RELEASE=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV        
-      
       - name: Spike
-        run: echo ${{ env.RELEASE }}
+        run: |
+          git status
