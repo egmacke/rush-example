@@ -13,12 +13,6 @@ jobs:
     name: Spike
     runs-on: ubuntu-latest
     steps:
-      - name: Clean up label
-        uses: egmacke/action-remove-labels@v1.3.1
-        with:
-          labels: ${{ env.LABEL }}
-          allow_missing: true
-          
       - name: Add label
         uses: actions-ecosystem/action-remove-labels@v1
         with:
@@ -35,10 +29,3 @@ jobs:
           mode: exactly
           count: 0
           labels: ${{ env.LABEL }}
-          
-      - name: Clean up label
-        if: always()
-        uses: egmacke/action-remove-labels@v1.3.1
-        with:
-          labels: ${{ env.LABEL }}
-          allow_missing: true
