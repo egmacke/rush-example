@@ -5,6 +5,9 @@ on:
     branches: [master]
     types: [opened, synchronize, reopened, edited]
 
+env:
+  LABEL: build-fail
+
 jobs:
   build_push_image:
     name: Spike
@@ -12,10 +15,19 @@ jobs:
     steps:
       - name: Clean up label
         uses: egmacke/action-remove-labels@v1.3.1
-        if: success() && github.event.pull_request
         with:
-          labels: build-fail
-          fail_on_error: false
+          labels: ${{ env.LABEL }}
           allow_missing: true
-          github_token: ${{ secrets.DEV_BOT_TOKEN }}
+          
+      # - name: Add label
+      #   uses: actions-ecosystem/action-remove-labels@v1
+      #   with:
+      #     labels: ${{ env.LABEL }}
       
+      - name: Test for label
+        uses: mheap/github-action-required-labels@v1
+        with:
+          mode: exactly
+          count: 0
+          labels: ${{ env.LABEL }}
+          
