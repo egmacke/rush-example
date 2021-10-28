@@ -9,7 +9,7 @@ env:
   LABEL: build-fail
 
 jobs:
-  build_push_image:
+  spike:
     name: Spike
     runs-on: ubuntu-latest
     steps:
@@ -23,11 +23,14 @@ jobs:
       #   uses: actions-ecosystem/action-remove-labels@v1
       #   with:
       #     labels: ${{ env.LABEL }}
-      
-      - name: Test for label
-        uses: mheap/github-action-required-labels@v1
+          
+  ci-build-check:
+    if: always() && github.event.pull_request
+    runs-on: ubuntu-latest
+    name: CI Build Check
+    steps:
+      - uses: mheap/github-action-required-labels@v1
         with:
           mode: exactly
           count: 0
           labels: ${{ env.LABEL }}
-          
