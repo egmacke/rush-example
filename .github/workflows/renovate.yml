@@ -13,24 +13,20 @@ jobs:
   renovate:
     name: Renovate
     runs-on: ubuntu-latest
-    # Set job outputs to values from filter step
-    outputs:
-      matrix: ${{ steps.filter.outputs.changes }}
-      build-comment: ${{ steps.create.outputs.comment-id }}
     steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.15.0
-          token: ${{ secrets.GH_TOKEN }}
-
       - name: User
         run: 
           echo "PR User ${{github.event.pull_request.user.login}}"
           echo "Issue User ${{github.event.issue.user.login}}"
+
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.15.0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Renovate
         run: |
