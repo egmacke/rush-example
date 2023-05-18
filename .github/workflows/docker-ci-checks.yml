@@ -16,11 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: ghcr.io/${{ github.repository }}-build-container
-      options: --user root
     steps:
       - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }}
 
       - name: Cache pnpm modules
         uses: actions/cache@v2
