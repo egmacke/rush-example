@@ -10,23 +10,15 @@ on:
       - synchronize
   workflow_dispatch:
     
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}-build-container
-
 jobs:
   ci-checks:
     name: CI Checks
     runs-on: ubuntu-latest
-    container: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+    container: ghcr.io/${{ github.repository }}-build-container
     steps:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GH_TOKEN }}
-      - name: Setup Node and NPM
-        uses: volta-cli/action@v1
-        with:
-          node-version: 14.15.1
 
       - name: Cache pnpm modules
         uses: actions/cache@v2
