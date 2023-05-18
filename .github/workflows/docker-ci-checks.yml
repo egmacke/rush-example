@@ -14,7 +14,9 @@ jobs:
   ci-checks:
     name: CI Checks
     runs-on: ubuntu-latest
-    container: ghcr.io/${{ github.repository }}-build-container
+    container: 
+      image: ghcr.io/${{ github.repository }}-build-container
+      options: --user root
     steps:
       - uses: actions/checkout@v3
         with:
