@@ -11,7 +11,6 @@ relationships in a Rush repo:
 
 (These projects are NOT meant to provide a realistic toolchain.)
 
-
 # Building this repo
 
 To build the projects in this repo, try these shell commands:
