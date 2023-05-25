@@ -1,5 +1,7 @@
 version: '1'
 invalidStatus: "pending"
 labelRule:
+  not:
+    - "build-fail"
   values:
     - "build-pass"
