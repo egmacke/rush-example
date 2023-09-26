@@ -1,37 +1,13 @@
 name: PR - Checks
 
 on:
-  pull_request:
-    branches: [master]
-    types:
-      - opened
-      - ready_for_review
-      - reopened
-      - synchronize
-
+  workflow_dispatch: 
+  
 jobs:
   renovate:
-    name: Renovate
     runs-on: ubuntu-latest
     steps:
-      - name: Test
-        if: github.event.pull_request.user.login == 'renovate[bot]' || github.event.issue.user.login == 'renovate[bot]'
-        run: echo Success
-
-      - name: User
-        run: 
-          echo "PR User ${{github.event.pull_request.user.login}}"
-          echo "Issue User ${{github.event.issue.user.login}}"
-
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.15.0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Renovate
-        run: |
-          node common/scripts/install-run-rush.js update
+      - uses: actions/checkout@v2
+                    
+      - name: Renovate Bot GitHub Action
+        uses: renovatebot/github-action@v36.0.0
