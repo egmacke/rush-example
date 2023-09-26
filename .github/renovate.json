@@ -1,8 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "./renovate-base.json"
   ],
+
   "allowedPostUpgradeCommands": ["node common/scripts/install-and-run-rush.js"],
   "postUpgradeTasks": {
     "commands": [
