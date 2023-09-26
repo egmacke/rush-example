@@ -9,9 +9,9 @@
   ],
 
   "allowedPostUpgradeCommands": [
-    "^node common/scripts/install-and-run-rush.js",
-    "^node common/scripts/install-and-run-rush.js update",
-    "^node common/scripts/install-and-run-rush.js change .*"
+    "^node common/scripts/install-run-rush.js",
+    "^node common/scripts/install-run-rush.js update",
+    "^node common/scripts/install-run-rush.js change .*"
   ],
   "allowPostUpgradeCommandTemplating": true,
   "postUpgradeTasks": {
