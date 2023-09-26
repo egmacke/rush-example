@@ -11,3 +11,6 @@ jobs:
                     
       - name: Renovate Bot GitHub Action
         uses: renovatebot/github-action@v36.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          configurationFile: .github/renovate.json
