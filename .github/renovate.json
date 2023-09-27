@@ -33,6 +33,7 @@
   "username": "renovate-release",
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
   "forkProcessing": "enabled",
+  "enabledManagers": ["npm"],
   "packageRules": [
     {
       "description": "lockFileMaintenance",
@@ -43,10 +44,9 @@
         "minor",
         "major",
         "lockFileMaintenance"
-      ],
-      "dependencyDashboardApproval": false,
-      "minimumReleaseAge": null
+      ]
     }
-  ]
+  ],
+  "rebaseWhen": "behind-base-branch"
 }
 
