@@ -1,21 +1,52 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+  "onboarding": false,
+  "requireConfig": "ignored",
+  "allowScripts": true,
+  "platform": "github",
+  "platformCommit": true,
+  "repositories": ["egmacke/rush-example"],
+
+  "allowedPostUpgradeCommands": [
+    "^node common/scripts/install-run-rush.js",
+    "^node common/scripts/install-run-rush.js update",
+    "^node common/scripts/install-run-rush.js change .*"
   ],
-  "allowedPostUpgradeCommands": ["node common/scripts/install-and-run-rush.js"],
+  "allowPostUpgradeCommandTemplating": true,
   "postUpgradeTasks": {
     "commands": [
-        "node common/scripts/install-run-rush.js update",
-        "node common/scripts/install-run-rush.js change --bulk --message \"{{{prTitle}}}\" --bump-type patch"
+      "node common/scripts/install-run-rush.js update",
+      "node common/scripts/install-run-rush.js change --bulk --message \"{{{prTitle}}}\" --bump-type patch"
     ],
     "fileFilters": [
-        "common/config/rush/browser-approved-packages.json",
-        "common/config/rush/nonbrowser-approved-packages.json",
-        "common/config/rush/repo-state.json",
-        "common/config/rush/pnpm-lock.yaml",
-        "common/changes/**/*.json"
+      "common/config/rush/browser-approved-packages.json",
+      "common/config/rush/nonbrowser-approved-packages.json",
+      "common/config/rush/repo-state.json",
+      "common/config/rush/pnpm-lock.yaml",
+      "common/changes/**/*.json"
     ],
     "executionMode": "branch"
-  }
+  },
+
+
+  "branchPrefix": "renovate/",
+  "username": "renovate-release",
+  "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
+  "forkProcessing": "enabled",
+  "packageRules": [
+    {
+      "description": "lockFileMaintenance",
+      "matchUpdateTypes": [
+        "pin",
+        "digest",
+        "patch",
+        "minor",
+        "major",
+        "lockFileMaintenance"
+      ],
+      "dependencyDashboardApproval": false,
+      "minimumReleaseAge": null
+    }
+  ]
 }
+
