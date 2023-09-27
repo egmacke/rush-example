@@ -48,6 +48,7 @@
       "dependencyDashboardApproval": false,
       "stabilityDays": 0
     }
-  ]
+  ],
+  "platformCommit": true
 }
 
