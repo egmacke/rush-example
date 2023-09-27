@@ -49,6 +49,6 @@
   ],
   "rebaseWhen": "behind-base-branch",
   "prHourlyLimit": 0,
-  "prConcurrentLimit": 2
+  "prConcurrentLimit": 4
 }
 
