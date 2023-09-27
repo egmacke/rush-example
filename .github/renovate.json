@@ -30,7 +30,7 @@
 
   "branchPrefix": "renovate/",
   "username": "renovate-release",
-  "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
+  "gitAuthor": "Renovate Bot <71255911+egmacke@users.noreply.github.com>",
   "forkProcessing": "enabled",
   "enabledManagers": ["npm"],
   "packageRules": [
