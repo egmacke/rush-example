@@ -15,8 +15,7 @@
   "allowPostUpgradeCommandTemplating": true,
   "postUpgradeTasks": {
     "commands": [
-      "node common/scripts/install-run-rush.js update",
-      "# node common/scripts/install-run-rush.js change --bulk --message \"{{{prTitle}}}\" --bump-type patch"
+      "node common/scripts/install-run-rush.js update"
     ],
     "fileFilters": [
       "common/config/rush/browser-approved-packages.json",
