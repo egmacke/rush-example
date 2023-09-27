@@ -36,8 +36,7 @@
   "packageRules": [
     {
       "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
-      "description": "lockFileMaintenance",
+      "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": [
         "pin",
         "digest",
@@ -50,8 +49,9 @@
   ],
   "rangeStrategy": "pin",
   "rebaseWhen": "behind-base-branch",
-  "rebaseLabel": "rebase",
+  
   "prHourlyLimit": 0,
   "prConcurrentLimit": 4,
+
   "prBodyTemplate": "{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{footer}}}"
 }
