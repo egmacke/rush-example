@@ -47,8 +47,9 @@
       ]
     }
   ],
+  "rangeStrategy": "bump",
   "rebaseWhen": "behind-base-branch",
   "prHourlyLimit": 0,
-  "prConcurrentLimit": 4
+  "prConcurrentLimit": 4,
+  "prBodyTemplate": "{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{footer}}}"
 }
-
