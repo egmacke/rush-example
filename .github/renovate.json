@@ -35,6 +35,7 @@
   "enabledManagers": ["npm"],
   "packageRules": [
     {
+      "matchManagers": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
       "description": "lockFileMaintenance",
       "matchUpdateTypes": [
@@ -49,6 +50,7 @@
   ],
   "rangeStrategy": "bump",
   "rebaseWhen": "behind-base-branch",
+  "rebaseLabel": "rebase",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 4,
   "prBodyTemplate": "{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{footer}}}"
