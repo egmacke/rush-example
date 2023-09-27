@@ -4,6 +4,7 @@
   "requireConfig": "ignored",
   "allowScripts": true,
   "platform": "github",
+  "platformCommit": true,
   "repositories": ["egmacke/rush-example"],
 
   "allowedPostUpgradeCommands": [
@@ -46,7 +47,6 @@
       "dependencyDashboardApproval": false,
       "minimumReleaseAge": null
     }
-  ],
-  "platformCommit": true
+  ]
 }
 
