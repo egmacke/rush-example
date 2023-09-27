@@ -29,8 +29,8 @@
 
 
   "branchPrefix": "renovate/",
-  "username": "renovate-release",
-  "gitAuthor": "Renovate Bot <71255911+egmacke@users.noreply.github.com>",
+  "username": "synap-devbot",
+  "gitAuthor": "Synap DevBot <71255911+egmacke@users.noreply.github.com>",
   "forkProcessing": "enabled",
   "enabledManagers": ["npm"],
   "packageRules": [
@@ -48,7 +48,7 @@
       ]
     }
   ],
-  "rangeStrategy": "bump",
+  "rangeStrategy": "pin",
   "rebaseWhen": "behind-base-branch",
   "rebaseLabel": "rebase",
   "prHourlyLimit": 0,
