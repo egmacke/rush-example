@@ -4,9 +4,7 @@
   "requireConfig": "ignored",
   "allowScripts": true,
   "platform": "github",
-  "repositories": [
-    "egmacke/rush-example"
-  ],
+  "repositories": ["egmacke/rush-example"],
 
   "allowedPostUpgradeCommands": [
     "^node common/scripts/install-run-rush.js",
@@ -16,15 +14,15 @@
   "allowPostUpgradeCommandTemplating": true,
   "postUpgradeTasks": {
     "commands": [
-        "node common/scripts/install-run-rush.js update",
-        "node common/scripts/install-run-rush.js change --bulk --message \"{{{prTitle}}}\" --bump-type patch"
+      "node common/scripts/install-run-rush.js update",
+      "node common/scripts/install-run-rush.js change --bulk --message \"{{{prTitle}}}\" --bump-type patch"
     ],
     "fileFilters": [
-        "common/config/rush/browser-approved-packages.json",
-        "common/config/rush/nonbrowser-approved-packages.json",
-        "common/config/rush/repo-state.json",
-        "common/config/rush/pnpm-lock.yaml",
-        "common/changes/**/*.json"
+      "common/config/rush/browser-approved-packages.json",
+      "common/config/rush/nonbrowser-approved-packages.json",
+      "common/config/rush/repo-state.json",
+      "common/config/rush/pnpm-lock.yaml",
+      "common/changes/**/*.json"
     ],
     "executionMode": "branch"
   },
@@ -33,7 +31,7 @@
   "branchPrefix": "renovate/",
   "username": "renovate-release",
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
-  "includeForks": true,
+  "forkProcessing": "enabled",
   "packageRules": [
     {
       "description": "lockFileMaintenance",
@@ -46,7 +44,7 @@
         "lockFileMaintenance"
       ],
       "dependencyDashboardApproval": false,
-      "stabilityDays": 0
+      "minimumReleaseAge": null
     }
   ],
   "platformCommit": true
