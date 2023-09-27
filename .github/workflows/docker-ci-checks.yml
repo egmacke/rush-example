@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     container: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_TOKEN }}
       - name: Setup Node and NPM
