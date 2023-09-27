@@ -16,7 +16,7 @@
   "postUpgradeTasks": {
     "commands": [
       "node common/scripts/install-run-rush.js update",
-      "node common/scripts/install-run-rush.js change --bulk --message \"{{{prTitle}}}\" --bump-type patch"
+      "# node common/scripts/install-run-rush.js change --bulk --message \"{{{prTitle}}}\" --bump-type patch"
     ],
     "fileFilters": [
       "common/config/rush/browser-approved-packages.json",
@@ -36,6 +36,7 @@
   "enabledManagers": ["npm"],
   "packageRules": [
     {
+      "matchDepTypes": ["dependencies", "devDependencies", "peerDependencies"],
       "description": "lockFileMaintenance",
       "matchUpdateTypes": [
         "pin",
