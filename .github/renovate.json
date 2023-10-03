@@ -11,12 +11,14 @@
     "^node common/scripts/install-run-rush.js",
     "^node common/scripts/install-run-rush.js update",
     "^node common/scripts/install-run-rush.js change .*",
-    "^echo.*"
+    "^echo.*",
+    "git status"
   ],
   "allowPostUpgradeCommandTemplating": true,
   "postUpgradeTasks": {
     "commands": [
       "node common/scripts/install-run-rush.js update",
+      "git status",
       "echo doing this once only"
     ],
     "fileFilters": [
