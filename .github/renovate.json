@@ -4,7 +4,7 @@
   "requireConfig": "ignored",
   "allowScripts": true,
   "platform": "github",
-  "platformCommit": false,
+  "platformCommit": true,
   "repositories": ["egmacke/rush-example"],
 
   "allowedPostUpgradeCommands": [
