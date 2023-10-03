@@ -4,18 +4,20 @@
   "requireConfig": "ignored",
   "allowScripts": true,
   "platform": "github",
-  "platformCommit": true,
+  "platformCommit": false,
   "repositories": ["egmacke/rush-example"],
 
   "allowedPostUpgradeCommands": [
     "^node common/scripts/install-run-rush.js",
     "^node common/scripts/install-run-rush.js update",
-    "^node common/scripts/install-run-rush.js change .*"
+    "^node common/scripts/install-run-rush.js change .*",
+    "^echo.*"
   ],
   "allowPostUpgradeCommandTemplating": true,
   "postUpgradeTasks": {
     "commands": [
-      "node common/scripts/install-run-rush.js update"
+      "node common/scripts/install-run-rush.js update",
+      "echo doing this once only"
     ],
     "fileFilters": [
       "common/config/rush/browser-approved-packages.json",
@@ -24,13 +26,12 @@
       "common/config/rush/pnpm-lock.yaml",
       "common/changes/**/*.json"
     ],
-    "executionMode": "update"
+    "executionMode": "branch"
   },
 
-
   "branchPrefix": "renovate/",
-  "username": "synap-devbot",
-  "gitAuthor": "Synap DevBot <71255911+egmacke@users.noreply.github.com>",
+  "username": "egmacke",
+  "gitAuthor": "Ed Mackenzie <71255911+egmacke@users.noreply.github.com>",
   "forkProcessing": "enabled",
   "enabledManagers": ["npm"],
   "packageRules": [

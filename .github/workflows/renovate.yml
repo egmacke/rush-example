@@ -18,4 +18,4 @@ jobs:
           configurationFile: .github/renovate.json
         env:
           LOG_LEVEL: 'debug'
-          RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
+          RENOVATE_GIT_PRIVATE_KEY: ${{ secrets.GPG_SIGNING_KEY }}
