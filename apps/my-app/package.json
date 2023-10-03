@@ -8,12 +8,12 @@
     "my-bulk-command": "node_modules/.bin/my-bulk-command"
   },
   "dependencies": {
-    "aws-sdk": "~2.932.0",
+    "aws-sdk": "2.932.0",
     "my-controls": "workspace:^1.0.4",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "3.6.19"
   },
   "devDependencies": {
     "my-toolchain": "workspace:^1.0.3",
-    "typescript": "^5.0.0"
+    "typescript": "5.2.2"
   }
 }
