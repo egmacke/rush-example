@@ -47,11 +47,12 @@
         "minor",
         "major",
         "lockFileMaintenance"
-      ]
+      ],
+      "recreateClosed": false
     },
     {
       "matchPackagePatterns": ["^ember"],
-      "enabled": false
+      "enabled": true
     }
   ],
   "rangeStrategy": "pin",
