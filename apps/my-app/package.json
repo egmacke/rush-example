@@ -10,7 +10,8 @@
   "dependencies": {
     "aws-sdk": "~2.932.0",
     "my-controls": "workspace:^1.0.4",
-    "whatwg-fetch": "^3.0.0"
+    "whatwg-fetch": "^3.0.0",
+    "ember": "1.0.0"
   },
   "devDependencies": {
     "my-toolchain": "workspace:^1.0.3",

@@ -48,6 +48,10 @@
         "major",
         "lockFileMaintenance"
       ]
+    },
+    {
+      "matchPackagePatterns": ["^ember"],
+      "enabled": false
     }
   ],
   "rangeStrategy": "pin",
