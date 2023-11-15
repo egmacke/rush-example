@@ -3,7 +3,7 @@
     {
       "packageName": "my-app",
       "comment": "patch",
-      "type": "patch"
+      "type": "minor"
     }
   ],
   "packageName": "my-app"
