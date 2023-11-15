@@ -1,25 +1,38 @@
 name: Spike
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        default: '0.0.0'
-        required: true
-        description: "My App version"
-      
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize, reopened, edited]
+
 env:
-  RELEASE: ${{ github.event.inputs.version }}
+  LABEL: build-fail
 
 jobs:
-  build_push_image:
+  spike:
     name: Spike
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Add label
+        uses: actions-ecosystem/action-add-labels@v1
         with:
-          ref: 'my-app_v${{env.RELEASE}}'
-
-      - name: Spike
-        run: |
-          git status
+          labels: ${{ env.LABEL }}
+          
+  ci-build-check:
+    if: always() && github.event.pull_request
+    runs-on: ubuntu-latest
+    name: CI Build Check
+    needs: spike
+    steps:
+      - uses: mheap/github-action-required-labels@v1
+        with:
+          mode: exactly
+          count: 0
+          labels: ${{ env.LABEL }}
+          
+      - name: Clean up label
+        if: always()
+        uses: egmacke/action-remove-labels@v1.3.1
+        with:
+          labels: ${{ env.LABEL }}
+          allow_missing: true
