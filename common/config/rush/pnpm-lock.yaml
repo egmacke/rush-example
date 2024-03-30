@@ -32,21 +32,21 @@ importers:
 
   ../../tools/my-toolchain:
     specifiers:
-      '@types/node': 10.17.60
+      '@types/node': 16.18.93
       colors: 1.4.0
       rimraf: 2.7.1
       typescript: 5.0.2
     dependencies:
       colors: 1.4.0
     devDependencies:
-      '@types/node': 10.17.60
+      '@types/node': 16.18.93
       rimraf: 2.7.1
       typescript: 5.0.2
 
 packages:
 
-  /@types/node/10.17.60:
-    resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
+  /@types/node/16.18.93:
+    resolution: {integrity: sha512-epWuohp6c0bQt0j3RYCiP9x52axHVn+CjS1Rx1VjPwF+ySg8lrigH3yXGs88XqnA+jGM2qnSMuFTsBxft+hO1Q==}
     dev: true
 
   /aws-sdk/2.932.0:
