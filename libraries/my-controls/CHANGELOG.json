@@ -2,6 +2,20 @@
   "name": "my-controls",
   "entries": [
     {
+      "version": "1.0.5",
+      "tag": "my-controls_v1.0.5",
+      "date": "Thu, 13 Feb 2025 14:39:11 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Patch test",
+            "author": "Edward <edward@synap.ac>",
+            "commit": "d3c3d6a8878a7d67d93f1cf5efacbcd11e2cc622"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.4",
       "tag": "my-controls_v1.0.4",
       "date": "Thu, 23 Sep 2021 13:18:50 GMT",

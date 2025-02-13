@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "version": "3.2.7",
+  "version": "3.3.0",
   "description": "An example application that consumes the my-controls library",
   "license": "MIT",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "aws-sdk": "2.932.0",
-    "my-controls": "workspace:^1.0.4",
+    "my-controls": "workspace:^1.0.5",
     "whatwg-fetch": "3.6.19",
     "ember": "1.0.0"
   },

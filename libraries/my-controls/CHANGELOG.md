@@ -1,6 +1,13 @@
 # Change Log - my-controls
 
-This log was last generated on Thu, 23 Sep 2021 13:18:50 GMT and should not be manually modified.
+This log was last generated on Thu, 13 Feb 2025 14:39:11 GMT and should not be manually modified.
+
+## 1.0.5
+Thu, 13 Feb 2025 14:39:11 GMT
+
+### Patches
+
+- Patch test
 
 ## 1.0.4
 Thu, 23 Sep 2021 13:18:50 GMT

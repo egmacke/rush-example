@@ -2,6 +2,25 @@
   "name": "my-app",
   "entries": [
     {
+      "version": "3.3.0",
+      "tag": "my-app_v3.3.0",
+      "date": "Thu, 13 Feb 2025 14:39:11 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "patch",
+            "author": "Edward <edward@synap.ac>",
+            "commit": "d182309dd9f423143a2884206290df2d2446f4b1"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"my-controls\" from `^1.0.4` to `^1.0.5`"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.2.7",
       "tag": "my-app_v3.2.7",
       "date": "Thu, 23 Sep 2021 13:18:50 GMT",
