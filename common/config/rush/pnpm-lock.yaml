@@ -9,15 +9,15 @@ importers:
     specifiers:
       aws-sdk: 2.932.0
       ember: 1.0.0
-      my-controls: workspace:^1.0.4
+      my-controls: workspace:^1.0.5
       my-toolchain: workspace:^1.0.3
       typescript: 5.0.2
-      whatwg-fetch: 3.6.19
+      whatwg-fetch: 3.6.20
     dependencies:
       aws-sdk: 2.932.0
       ember: 1.0.0
       my-controls: link:../../libraries/my-controls
-      whatwg-fetch: 3.6.19
+      whatwg-fetch: 3.6.20
     devDependencies:
       my-toolchain: link:../../tools/my-toolchain
       typescript: 5.0.2
@@ -203,8 +203,8 @@ packages:
     hasBin: true
     dev: false
 
-  /whatwg-fetch/3.6.19:
-    resolution: {integrity: sha512-d67JP4dHSbm2TrpFj8AbO8DnL1JXL5J9u0Kq2xW6d0TFDbCA3Muhdt8orXC22utleTVj7Prqt82baN6RBvnEgw==}
+  /whatwg-fetch/3.6.20:
+    resolution: {integrity: sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==}
     dev: false
 
   /wrappy/1.0.2:
