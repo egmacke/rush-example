@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "10.17.60",
-    "rimraf": "2.7.1",
+    "rimraf": "6.1.3",
     "typescript": "5.0.2"
   }
 }
